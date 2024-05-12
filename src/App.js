@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+// import './App.css';
+// import Home from "./Home/HomePage"
+// import React, { useState } from 'react';
+
+// function App() {
+
+//   return (
+//     <Home/> 
+//   );
+// }
+
+// export default App;
+
+
+// App.js
+
 import './App.css';
+import Home from "./Home/HomePage";
+import TrackListPage from "./Tracklist/Tracks"; 
+import React from 'react';
+import PlayerPage from "./player/PlayPage"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tracks" element={<TrackListPage />} />
+        <Route path="/player" element={<PlayerPage />} />
+      </Routes>
+    </Router>
     </div>
   );
 }

@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  margin: 0; /* Add margin: 0 to remove any default body margin */
+}
+
+.title {
+    font-size: xx-large;
+    display: flex;
+    position: centre;
+  }
+  
+  
+  /* .container {
+    background: linear-gradient(135deg, black, #010111, #020225, black);
+    background: linear-gradient(
+      135deg,
+      rgb(62, 50, 79),
+      #19194b,
+      #2a2a60,
+      rgb(61, 55, 151)
+    );
+    background-size: 400% 400%;
+    animation: gradientWave 15s ease infinite;
+    color: white;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+  }
+   */
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px; 
+    margin-top: 20px;
+  }
+
+  .container {
+    background: linear-gradient(180deg, black, #010111, #020225, black);
+    background: linear-gradient(
+      180deg,
+      rgb(62, 50, 79),
+      #19194b,
+      #2a2a60,
+      rgb(61, 55, 151)
+    );
+    background-size: 400% 400%;
+    animation: gradientWave 15s ease infinite;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

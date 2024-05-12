@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  font-size: xx-large;
+  display: flex;
+  position: centre;
+}
+
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+} */
+
+.container {
+    background: linear-gradient(135deg, black, #010111, #020225, black);
+    background: linear-gradient(
+      135deg,
+      rgb(62, 50, 79),
+      #19194b,
+      #2a2a60,
+      rgb(61, 55, 151)
+    );
+    background-size: 400% 400%;
+    animation: gradientWave 15s ease infinite;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+button {
+  font-size: 16px;
+  padding: 10px 20px; 
+  margin-top: 20px;
+}

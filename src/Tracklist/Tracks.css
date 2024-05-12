@@ -1,0 +1,43 @@
+.helper {
+    background: linear-gradient(135deg, black, #010111, #020225, black);
+    background: linear-gradient(
+      135deg,
+      rgb(62, 50, 79),
+      #19194b,
+      #2a2a60,
+      rgb(61, 55, 151)
+    );
+    background-size: 400% 400%;
+    animation: gradientWave 15s ease infinite;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+
+.track-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  height: fit-content; 
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+}
+
+.track-info {
+  flex: 1; 
+  color: #333;
+}
+
+.play-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
